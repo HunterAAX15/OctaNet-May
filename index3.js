@@ -29,7 +29,7 @@ function newElement() {
   var inputValue = document.getElementById("myInput").value;
   var dateTimeValue = document.getElementById("myDateTime").value;
   var priorityValue = document.getElementById("myPriority").value;
-  var t = document.createTextNode(`${inputValue} - ${new Date(dateTimeValue).toLocaleString()}`);
+  var t = document.createTextNode(`${inputValue} - ${new Date(dateTimeValue).toLocaleString()}-${priorityvalue}`);
   li.appendChild(t);
   li.className = priorityValue;
   li.setAttribute('data-datetime', dateTimeValue);
